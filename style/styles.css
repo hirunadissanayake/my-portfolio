@@ -30,26 +30,19 @@ header {
 #logo:hover {
     color: #8a4af3;
 }
-nav ul {
-    justify-content: flex-end;
-    display:flex;
-    list-style: none;
-    position: absolute;
-
-
-}
-nav ul li {
-    margin: 0 16px;
-}
-nav ul li a {
+nav a {
     text-decoration: none;
     color: black;
+    margin-left: 40px;
     font-size: 16px;
     font-weight: 500;
     transition: color 0.3s;
+
+
 }
 
-nav ul li a:hover {
+
+nav a:hover {
     color: #8a4af3;
 }
 #homePage,#aboutMePage,#skillsPage,#projectspage,#assignmentPage,#galleryPage,#footer {
