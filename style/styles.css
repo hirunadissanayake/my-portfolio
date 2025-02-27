@@ -135,4 +135,8 @@ nav a:hover {
     transform: translate(-50%, -50%);
 
 }
+#aboutme {
+    text-align: center;
+    padding: 50px 10%;
+}
 
