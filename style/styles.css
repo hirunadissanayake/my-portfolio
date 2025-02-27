@@ -55,17 +55,16 @@ nav a:hover {
     margin: 10px;
     background: #8a4af3;!* Space between icons *!
     display: block;
+    width: 50px
 }
 .social-links a img{
     width: 40px;   !* Adjust size as needed *!
     height: auto;
-    display: block;
     transition: transform 0.3s ease-in-out;
 }*/
 
 .social-links{
     display: block;
-    padding: 10px;
     background: #673ab7;
     position: fixed;
     left: 45px;
@@ -74,9 +73,8 @@ nav a:hover {
 
 }
 .social-links a img{
-    width: 30px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    width: 50px;
+    padding: 10px;
     transition: transform 0.3s ease-in-out;
 
 }
@@ -89,41 +87,52 @@ nav a:hover {
 #hero {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     height: 110vh;
     background: #9bdce2;
-    text-align: center;
-    position: relative;
+    /*text-align: center;*/
+    /*position: relative;*/
 }
 
-
 .hero-content {
-
+    justify-content: center;
+    /*position: relative;*/
 }
 
 .hero-content img {
     width: 1000px;
     border-radius: 10px;
-    padding-top: 65px;
-    position: relative;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
     left: 0;
     right: 0;
-    bottom: 0;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
+    z-index: 500;
+
+
 }
 
 .hero-content h1 {
-    font-size: 64px;
-    font-weight: bold;
+    font-size: 200px;
+    font-weight: bolder;
     color: #fff;
-    margin-top: 10px;
+    z-index: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -92%);
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: 600;
     color: #fff;
-    margin-top: 5px;
+    z-index: 700;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
