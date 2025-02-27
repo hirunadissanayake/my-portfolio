@@ -10,6 +10,7 @@ body {
     position: relative;
 
 }
+/*Header*/
 header {
     display: flex;
     justify-content: space-between;
@@ -44,12 +45,47 @@ nav a {
 nav a:hover {
     color: #8a4af3;
 }
+
+/*.social-links{
+    position: fixed;  !* Keeps it fixed on the side *!
+    left: 20px;       !* Adjust the left position *!
+    top: 50%;         !* Center vertically *!
+    transform: translateY(-50%);
+    z-index: 1000;    !* Ensures it's above other elements *!
+    margin: 10px;
+    background: #8a4af3;!* Space between icons *!
+    display: block;
+}
+.social-links a img{
+    width: 40px;   !* Adjust size as needed *!
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}*/
+
+.social-links{
+    display: block;
+    padding: 10px;
+    background: #673ab7;
+    position: fixed;
+    left: 45px;
+    width: 50px;
+    z-index: 1000;
+
+}
+.social-links a img{
+    width: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: transform 0.3s ease-in-out;
+
+}
 #homePage,#aboutMePage,#skillsPage,#projectspage,#assignmentPage,#galleryPage,#footer {
     position: relative;
     padding-left: 70px;
     padding-right: 70px;
 }
-/* Hero Section */
+/*Home*/
 #hero {
     display: flex;
     align-items: center;
