@@ -144,26 +144,48 @@ nav a:hover {
 }
 .about-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1200px;
+    justify-content: space-between;
+    gap: 40px;
+    /*max-width: 1200px;*/
     margin: auto;
 }
 .about-image {
+    flex: 1;
+    position: relative;
     align-items: center;
+
+
 }
 
 
 .about-image img {
-    width: 100%;
+    width: 105%;
     height: auto;
     background-color: #9bdce2;
 }
 
-/*.about-text{*/
-/*    font-size: 24px;*/
-/*}*/
+.about-text{
+    flex: 1;
+    font-size: 24px;
+    position: relative;
 
+}
+.cv-button {
+    display: inline-block;
+    background-color: #5C2D91;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
 
+}
+.cv-button:hover {
+    background-color: #4a2372;
+}
 
