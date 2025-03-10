@@ -446,7 +446,7 @@ nav a:hover {
     flex-direction: column;
     /*justify-content: center;*/
     align-items: center;
-    height: 110vh;
+    height: 100vh;
     margin: 0;
     padding-top: 70px;
 }
@@ -540,4 +540,71 @@ nav a:hover {
 
 .github-icon img:hover {
     transform: scale(1.1);
+}
+
+/*gallery*/
+#instagram {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#instagram h2 {
+    font-size: 42px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for the Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4fr;
+    gap: 10px;
+    justify-content: center;
+
+    margin: auto;
+}
+
+/* Specific Image Placements */
+.gallery-item:nth-child(1) { /* Left big image */
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.gallery-item:nth-child(2) { /* Center big image */
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.gallery-item:nth-child(3) { /* Right small column top */
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.gallery-item:nth-child(4) { /* Right small column below first image */
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.gallery-item:nth-child(5) { /* Left small image */
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.gallery-item:nth-child(6) { /* Right small column below second image */
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.gallery-item:nth-child(7) { /* Right small column bottom */
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* Image Styling */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
