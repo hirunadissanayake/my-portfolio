@@ -504,11 +504,13 @@ nav a:hover {
 .card h3 {
     margin: 10px 0;
     font-size: 18px;
+    font-weight: bolder;
 }
 
 /* Buttons */
 .card button {
     background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
     border: none;
     color: white;
     padding: 8px 14px;
