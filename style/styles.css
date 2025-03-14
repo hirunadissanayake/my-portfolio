@@ -91,6 +91,27 @@ nav a:hover {
     padding-right: 70px;
 }
 
+@media all and (max-width: 768px) {
+    nav a {
+        display: none;
+    }
+
+    #menuIcon {
+        display: block;
+        width: 35px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+}
+@media all and (max-width: 480px) {
+    #menuIcon {
+        width: 30px;
+    }
+}
+
 /*Home*/
 #hero {
     display: flex;
