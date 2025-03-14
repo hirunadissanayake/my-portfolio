@@ -228,7 +228,99 @@ nav a:hover {
     background-color: #7a22d9;
 }
 
+@media all and (max-width: 768px) {
+    #aboutMePage {
+        margin: 0;
+        padding: 0;
+    }
 
+    h2 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    /* Left Side - Image */
+    .about-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: #9bdce2;
+        display: flex;
+        align-items: flex-start; /* Align overlay to the top */
+        justify-content: center;
+    }
+
+    /* Purple Overlay inside the image */
+    .purple-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 3%; /* Adjust height as needed */
+        background-color: #9333ea;
+        z-index: 1;
+        opacity: 0.8; /* Slight transparency */
+    }
+
+    /* Text */
+    .about-text {
+        flex: 1;
+        position: relative;
+        text-align: center;
+        top: 0; /* Remove negative top positioning */
+    }
+}
+
+@media all and (max-width: 480px) {
+    #aboutMePage {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .about-container {
+        padding: 0;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .about-image {
+        width: 100%; /* Makes image slightly larger */
+    }
+
+    .purple-overlay {
+        height: 2%; /* Slightly thinner overlay */
+    }
+
+    .about-text {
+        padding: 5px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .cv-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
 
 /*skills and technologies*/
 .container {
