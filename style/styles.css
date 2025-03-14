@@ -570,8 +570,8 @@ nav a:hover {
     }
 
     .github-icon {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     /* Adjust card positioning for a smaller container */
@@ -596,7 +596,7 @@ nav a:hover {
 
     .card {
         width: 130px;
-        height: 180px;
+        height: 195px;
     }
 
     .card h3 {
@@ -609,9 +609,11 @@ nav a:hover {
     }
 
     .github-icon {
-        width: 30px;
-        height: 30px;
+
+        width: 25px;
+        height: 25px;
     }
+
 
     /* Adjust card positioning for a smaller container */
     .card:nth-child(1) { transform: translate(-50%, -50%) rotateY(0deg) translateZ(150px); }
