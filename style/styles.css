@@ -228,7 +228,7 @@ nav a:hover {
     background-color: #7a22d9;
 }
 
-
+/*skills and technologies*/
 .container {
     display: flex;
     justify-content: center;
@@ -315,6 +315,81 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .skills-section, .technologies-section {
+        width: 100%;
+    }
+    #skillsPage h2{
+        font-size: 36px;
+    }
+
+    .technologies-section {
+        order: 2; /* Moves the Technologies section below Skills */
+        margin-top: 30px;
+    }
+
+    .technologies-section div {
+        grid-template-columns: repeat(4, 1fr); /* 3 columns for tablet view */
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .skill-item {
+        width: 90%;
+    }
+
+    .skill-item img {
+        width: 60px;
+        padding: 8px;
+    }
+
+    .technologies-section img {
+        width: 60px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .skills-section, .technologies-section {
+        width: 100%;
+        padding: 10px;
+    }
+    #skillsPage h2{
+        font-size: 26px;
+    }
+
+    .technologies-section div {
+        grid-template-columns: repeat(4, 1fr); /* 2 columns for mobile view */
+        gap: 30px;
+        padding: 5px;
+    }
+
+    .skill-item {
+        flex-direction: column; /* Stack icon and text vertically */
+        text-align: center;
+        width: 100%;
+    }
+
+    .skill-item img {
+        width: 45px;
+        padding: 6px;
+    }
+
+    .technologies-section img {
+        width: 45px;
+        padding: 6px;
+    }
+}
 
 
 /*projects*/
