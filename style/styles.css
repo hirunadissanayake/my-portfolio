@@ -151,6 +151,8 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*aboutme*/
 #aboutme h2{
     text-align: center;
     padding-top: 70px;
@@ -195,7 +197,6 @@ nav a:hover {
     z-index: -1;
 }
 
-/* Right Side - Text */
 .about-text {
     flex: 1;
     position: relative;
@@ -210,7 +211,6 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-/* CV Download Button */
 .cv-button {
     display: block;
     width: fit-content;
@@ -227,6 +227,8 @@ nav a:hover {
 .cv-button:hover {
     background-color: #7a22d9;
 }
+
+
 
 /*skills and technologies*/
 .container {
@@ -263,7 +265,7 @@ nav a:hover {
     /*align-items: flex-start;*/
 }
 
-/* Skill item: icon + text in one row */
+
 .skill-item {
     display: flex;
     align-items: center;
@@ -271,7 +273,6 @@ nav a:hover {
     width: 100%;
 }
 
-/* Skill Icons */
 .skill-item img {
     width: 75px;
     height: auto;
@@ -282,18 +283,15 @@ nav a:hover {
     transition: transform 0.2s ease-in-out;
 }
 
-/* Hover Effect */
 .skill-item img:hover {
     transform: scale(1.1);
 }
 
-/* Skill Name */
 .skill-item span {
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Technologies Section */
 .technologies-section div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -315,6 +313,7 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+/*tablet*/
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -335,7 +334,7 @@ nav a:hover {
     }
 
     .technologies-section div {
-        grid-template-columns: repeat(4, 1fr); /* 3 columns for tablet view */
+        grid-template-columns: repeat(4, 1fr);
         gap: 50px;
         padding: 10px;
     }
@@ -355,6 +354,7 @@ nav a:hover {
     }
 }
 
+/*mobile*/
 @media (max-width: 480px) {
     .container {
         padding: 15px;
@@ -369,13 +369,13 @@ nav a:hover {
     }
 
     .technologies-section div {
-        grid-template-columns: repeat(4, 1fr); /* 2 columns for mobile view */
+        grid-template-columns: repeat(4, 1fr);
         gap: 30px;
         padding: 5px;
     }
 
     .skill-item {
-        flex-direction: column; /* Stack icon and text vertically */
+        flex-direction: column;
         text-align: center;
         width: 100%;
     }
