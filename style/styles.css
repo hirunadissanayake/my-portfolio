@@ -557,7 +557,6 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* Grid Layout for the Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -569,37 +568,37 @@ nav a:hover {
 }
 
 /* Specific Image Placements */
-.gallery-item:nth-child(1) { /* Left big image */
+.gallery-item:nth-child(1) {
     grid-column: span 2;
     grid-row: span 3;
 }
 
-.gallery-item:nth-child(2) { /* Center big image */
+.gallery-item:nth-child(2) {
     grid-column: span 3;
     grid-row: span 4;
 }
 
-.gallery-item:nth-child(3) { /* Right small column top */
+.gallery-item:nth-child(3) {
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.gallery-item:nth-child(4) { /* Right small column below first image */
+.gallery-item:nth-child(4) {
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.gallery-item:nth-child(5) { /* Left small image */
+.gallery-item:nth-child(5) {
     grid-column: span 1;
     grid-row: span 2;
 }
 
-.gallery-item:nth-child(6) { /* Right small column below second image */
+.gallery-item:nth-child(6) {
     grid-column: span 1;
     grid-row: span 1;
 }
 
-.gallery-item:nth-child(7) { /* Right small column bottom */
+.gallery-item:nth-child(7) {
     grid-column: span 1;
     grid-row: span 1;
 }
@@ -611,7 +610,7 @@ nav a:hover {
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-/* Tablet View (max-width: 768px) */
+/* Tablet View  */
 @media (max-width: 768px) {
 
     #galleryPage{
@@ -624,16 +623,16 @@ nav a:hover {
 
 
     .gallery {
-        grid-template-columns: repeat(4, 1fr); /* 3 columns for tablets */
+        grid-template-columns: repeat(4, 1fr);
         gap: 8px;
     }
 
-    /* Adjusting image placements */
+
     .gallery-item:nth-child(1){
         display: none;
     }
     .gallery-item:nth-child(2) {
-        grid-column: span 3; /* Bigger images take full width */
+        grid-column: span 3;
         grid-row: span 4;
     }
 
@@ -663,7 +662,7 @@ nav a:hover {
     }
 }
 
-/* Mobile View (max-width: 480px) */
+/* Mobile View */
 @media (max-width: 480px) {
     #galleryPage{
         padding-right: 15px;
@@ -676,7 +675,7 @@ nav a:hover {
 
 
     .gallery {
-        grid-template-columns: repeat(4, 1fr); /* 3 columns for mobile */
+        grid-template-columns: repeat(4, 1fr);
         gap: 5px;
     }
 
@@ -685,7 +684,7 @@ nav a:hover {
         display: none;
     }
     .gallery-item:nth-child(2) {
-        grid-column: span 3; /* Bigger images take full width */
+        grid-column: span 3;
         grid-row: span 4;
     }
 
@@ -849,6 +848,7 @@ input::placeholder, textarea::placeholder {
     background-color: white;
     color: #4B0082;
 }
+
 @media (max-width: 768px) { /* Tablets */
 
     #footer {
