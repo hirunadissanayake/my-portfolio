@@ -260,14 +260,14 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /*align-items: flex-start; !* Align items to the left *!*/
+    /*align-items: flex-start;*/
 }
 
 /* Skill item: icon + text in one row */
 .skill-item {
     display: flex;
-    align-items: center;  /* Keep icon and text in one row */
-    gap: 10px;  /* Space between icon and text */
+    align-items: center;
+    gap: 10px;
     width: 100%;
 }
 
@@ -315,6 +315,9 @@ nav a:hover {
     transform: scale(1.1);
 }
 
+
+
+/*projects*/
 #projects {
     justify-content: center;
     background: #f3f3f3;
@@ -433,6 +436,90 @@ nav a:hover {
     right: 0;
 }
 
+@media all and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    #projectsPage {
+        padding: 0px;
+    }
+
+    #projects {
+        padding: 0px;
+    }
+
+    #projects h2 {
+        font-size: 36px;
+    }
+
+    .project-box {
+        width: 170px;
+        height: 170px;
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .project-box span {
+        font-size: 1.8rem;
+    }
+
+    .project-box p {
+        font-size: 1rem;
+    }
+
+    .project-box a img {
+        width: 33px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #projectsPage {
+        padding: 0px;
+    }
+    #projects {
+        padding: 0px;
+    }
+
+    #projects h2 {
+        font-size: 26px; /* Smaller heading */
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    .project-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-box {
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+        margin: 15px auto;
+    }
+
+    .project-box span {
+        font-size: 1.5rem;
+    }
+
+    .project-box p {
+        font-size: 0.9rem;
+    }
+
+    .project-box a img {
+        width: 30px;
+    }
+}
+
 /*assignments*/
 /* Keyframe Animation */
 @keyframes autoRotate {
@@ -444,7 +531,7 @@ nav a:hover {
     }
 }
 
-/* Centering the page */
+
 #assignments {
     display: flex;
     flex-direction: column;
@@ -470,7 +557,6 @@ nav a:hover {
     animation: autoRotate 20s linear infinite;
 }
 
-/* Stop rotation on hover */
 .card-container:hover {
     animation-play-state: paused;
 }
@@ -574,7 +660,6 @@ nav a:hover {
         height: 30px;
     }
 
-    /* Adjust card positioning for a smaller container */
     .card:nth-child(1) { transform: translate(-50%, -50%) rotateY(0deg) translateZ(250px); }
     .card:nth-child(2) { transform: translate(-50%, -50%) rotateY(60deg) translateZ(250px); }
     .card:nth-child(3) { transform: translate(-50%, -50%) rotateY(120deg) translateZ(250px); }
@@ -615,7 +700,6 @@ nav a:hover {
     }
 
 
-    /* Adjust card positioning for a smaller container */
     .card:nth-child(1) { transform: translate(-50%, -50%) rotateY(0deg) translateZ(150px); }
     .card:nth-child(2) { transform: translate(-50%, -50%) rotateY(60deg) translateZ(150px); }
     .card:nth-child(3) { transform: translate(-50%, -50%) rotateY(120deg) translateZ(150px); }
