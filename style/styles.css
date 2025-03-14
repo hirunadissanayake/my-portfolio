@@ -611,6 +611,110 @@ nav a:hover {
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+
+    #galleryPage{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    #galleryPage h2 {
+        font-size: 32px;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* 3 columns for tablets */
+        gap: 8px;
+    }
+
+    /* Adjusting image placements */
+    .gallery-item:nth-child(1){
+        display: none;
+    }
+    .gallery-item:nth-child(2) {
+        grid-column: span 3; /* Bigger images take full width */
+        grid-row: span 4;
+    }
+
+    .gallery-item:nth-child(3){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .gallery-item:nth-child(4){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .gallery-item:nth-child(5){
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .gallery-item:nth-child(6){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .gallery-item:nth-child(7) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .gallery-item img {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    #galleryPage{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #galleryPage h2 {
+        font-size: 26px;
+    }
+
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* 3 columns for mobile */
+        gap: 5px;
+    }
+
+    /* Stacking large images */
+    .gallery-item:nth-child(1){
+        display: none;
+    }
+    .gallery-item:nth-child(2) {
+        grid-column: span 3; /* Bigger images take full width */
+        grid-row: span 4;
+    }
+
+    .gallery-item:nth-child(3){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .gallery-item:nth-child(4){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .gallery-item:nth-child(5){
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .gallery-item:nth-child(6){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .gallery-item:nth-child(7) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .gallery-item img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
 /*footer*/
 #footer{
     padding-top: 70px;
