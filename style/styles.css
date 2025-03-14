@@ -496,7 +496,7 @@ nav a:hover {
     padding: 15px;
 }
 
-/* Adjusting spacing between cards */
+
 .card:nth-child(1) { transform: translate(-50%, -50%) rotateY(0deg) translateZ(350px); }
 .card:nth-child(2) { transform: translate(-50%, -50%) rotateY(60deg) translateZ(350px); }
 .card:nth-child(3) { transform: translate(-50%, -50%) rotateY(120deg) translateZ(350px); }
@@ -543,6 +543,83 @@ nav a:hover {
 
 .github-icon img:hover {
     transform: scale(1.1);
+}
+
+@media all and (max-width: 768px) {
+    #assignmentPage h2{
+        font-size: 32px;
+    }
+    .card-container {
+        width: 500px;
+        height: 350px;
+        animation: autoRotate 25s linear infinite; /* Slightly slower rotation */
+    }
+
+    .card {
+        width: 150px;
+        height: 210px;
+    }
+
+    .card h3 {
+        font-size: 16px;
+    }
+
+    .card button {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+    .github-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Adjust card positioning for a smaller container */
+    .card:nth-child(1) { transform: translate(-50%, -50%) rotateY(0deg) translateZ(250px); }
+    .card:nth-child(2) { transform: translate(-50%, -50%) rotateY(60deg) translateZ(250px); }
+    .card:nth-child(3) { transform: translate(-50%, -50%) rotateY(120deg) translateZ(250px); }
+    .card:nth-child(4) { transform: translate(-50%, -50%) rotateY(180deg) translateZ(250px); }
+    .card:nth-child(5) { transform: translate(-50%, -50%) rotateY(240deg) translateZ(250px); }
+    .card:nth-child(6) { transform: translate(-50%, -50%) rotateY(300deg) translateZ(250px); }
+}
+
+
+@media all and (max-width: 480px) {
+    .card-container {
+        width: 350px;
+        height: 300px;
+        animation: autoRotate 30s linear infinite; /* Slower rotation for clarity */
+    }
+    #assignmentPage h2{
+        font-size: 26px;
+    }
+
+    .card {
+        width: 130px;
+        height: 180px;
+    }
+
+    .card h3 {
+        font-size: 14px;
+    }
+
+    .card button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .github-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Adjust card positioning for a smaller container */
+    .card:nth-child(1) { transform: translate(-50%, -50%) rotateY(0deg) translateZ(150px); }
+    .card:nth-child(2) { transform: translate(-50%, -50%) rotateY(60deg) translateZ(150px); }
+    .card:nth-child(3) { transform: translate(-50%, -50%) rotateY(120deg) translateZ(150px); }
+    .card:nth-child(4) { transform: translate(-50%, -50%) rotateY(180deg) translateZ(150px); }
+    .card:nth-child(5) { transform: translate(-50%, -50%) rotateY(240deg) translateZ(150px); }
+    .card:nth-child(6) { transform: translate(-50%, -50%) rotateY(300deg) translateZ(150px); }
 }
 
 /*gallery*/
