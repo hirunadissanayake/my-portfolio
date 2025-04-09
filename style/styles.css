@@ -394,8 +394,9 @@ nav a:hover {
     #aboutMePage h2 {
         font-size: 28px;
         margin-bottom: 10px;
+        padding-top:25px;
+        padding-bottom: 20px;
     }
-
     .about-container {
         padding: 0;
         margin: auto;
@@ -565,6 +566,11 @@ nav a:hover {
     }
     #skillsPage h2{
         font-size: 26px;
+    }
+
+    .skills-section h2 , .technologies-section h2 {
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .technologies-section div {
@@ -766,6 +772,7 @@ nav a:hover {
     .project {
         flex-direction: column;
         text-align: center;
+        margin-bottom: 0px;
     }
 
     .project-details {
@@ -950,6 +957,10 @@ nav a:hover {
 
 
 @media all and (max-width: 480px) {
+    #assignments {
+        height: 65vh;
+
+    }
     .card-container {
         width: 350px;
         height: 300px;
