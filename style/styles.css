@@ -445,10 +445,9 @@ nav a:hover {
     font-size: 42px;
     font-weight: bolder;
     padding-bottom: 50px;
-}
-.skills-section h2,.technologies-section h2 {
     padding-top: 70px;
 }
+
 
 /* Skills Section */
 .skills-container {
@@ -519,6 +518,10 @@ nav a:hover {
     }
     #skillsPage h2{
         font-size: 36px;
+    }
+    .skills-section h2 , .technologies-section h2 {
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 
     .technologies-section {
