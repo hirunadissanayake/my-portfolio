@@ -194,6 +194,7 @@ nav a:hover {
     .social-links {
         flex-direction: row;
         position: absolute;
+        z-index: 2;
         width: 100%;
         top: 100px;
         left: 0;
