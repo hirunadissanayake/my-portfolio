@@ -73,11 +73,22 @@ nav a:hover {
     .social-links {
         display: none;
     }
+    #logo {
+        position: relative;
+        right: 48px;
+        font-size: 20px;
+        font-weight: 700;
+
+    }
+
 
 }
 @media all and (max-width: 480px) {
     #menuIcon {
         width: 30px;
+    }
+    #logo {
+        right: 55px;
     }
 }
 
@@ -782,6 +793,12 @@ nav a:hover {
     .project-details h3 {
         font-size: 1.3rem;
     }
+    .project-details ul {
+        font-size: 16px;
+    }
+    .project-details p {
+        font-size: 16px;
+    }
 
     .project-box {
         width: 150px;
@@ -1345,11 +1362,11 @@ input::placeholder, textarea::placeholder {
         width: 80%;
     }
 
-    .social-links {
+    .social-links2 {
         gap: 10px;
     }
 
-    .social-links img {
+    .social-links2 img {
         width: 35px;
         height: 35px;
     }
@@ -1410,7 +1427,7 @@ input::placeholder, textarea::placeholder {
         font-size: 12px;
     }
 
-    .social-links img {
+    .social-links2 img {
         width: 30px;
         height: 30px;
     }
