@@ -244,6 +244,9 @@ nav a:hover {
     #menuIcon {
         width: 30px;
     }
+    .social-links{
+        top: 98px;
+    }
 
     .social-links a img {
         width: 22px;
