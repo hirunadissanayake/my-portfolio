@@ -248,6 +248,10 @@ nav a:hover {
         top: 97px;
     }
 
+    .hero-content {
+        height: 90%;
+    }
+
     .social-links a img {
         width: 22px;
         height: 22px;
