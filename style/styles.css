@@ -24,12 +24,14 @@ header {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#logo {
+#logo a{
     font-size: 22px;
     font-weight: 700;
+    color: black;
+    text-decoration: none;
 
 }
-#logo:hover {
+#logo a:hover {
     color: #8a4af3;
 }
 
