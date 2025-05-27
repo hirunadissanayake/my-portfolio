@@ -10,6 +10,7 @@ body {
     position: relative;
 
 }
+
 /*Header*/
 header {
     display: flex;
@@ -193,14 +194,7 @@ nav a:hover {
         padding-right: 0px;
         padding-left: 0px;
     }
-    #menuIcon {
-        display: block;
-        width: 35px;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        cursor: pointer;
-    }
+
     nav a {
         display: none;
     }
@@ -243,9 +237,7 @@ nav a:hover {
 }
 
 @media all and (max-width: 480px) {
-    #menuIcon {
-        width: 30px;
-    }
+
     .social-links{
         top: 97px;
     }
