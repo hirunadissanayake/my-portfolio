@@ -1324,6 +1324,12 @@ textarea:-webkit-autofill:focus {
     border: 1px solid white !important;
 }
 
+input:focus,
+textarea:focus {
+    border: 1px solid white !important;
+    outline: none; /* Removes default browser outline */
+}
+
 textarea {
     resize: none;
 }
